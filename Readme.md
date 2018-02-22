@@ -1,5 +1,6 @@
 # BACKEND TODO for SOCIAL WORD CLOUD
 
+
 ### Getting Started
 
 - Create a deployed skeleton
@@ -16,4 +17,3 @@
 
 - Format of  outside API --> Server API --> Frontend
 
-- Database link [serverhost](https://social-cloud.herokuapp.com/)

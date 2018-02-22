@@ -6,25 +6,25 @@ module.exports = {
   },
   read(id, table) {
     return database(table)
-      .where("id", id)
+      .where('id', id)
       .first();
   },
   createLocations(locations) {
-    return database("locations")
+    return database('locations')
       .insert(locations)
-      .returning("*")
+      .returning('*')
       .then(record => record[0]);
   },
   updateLocations(id, request) {
-    return database("locations")
+    return database('locations')
       .update(request)
-      .where("id", id)
-      .returning("*")
+      .where('id', id)
+      .returning('*')
       .then(record => record);
   },
   deleteLocations(id) {
-    return database("locations")
+    return database('locations')
       .delete()
-      .where("id", id);
+      .where('id', id);
   }
 };
